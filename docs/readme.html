@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vardef: contained and organized variable definition &#8212; vardef 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pydoctheme.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    
+    <script src="_static/sidebar.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="Contents" href="index.html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" type="image/png" href="_static/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    
+    
+
+  </head><body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
+        <li><a href="index.html">vardef-0.1.0</a> &#187;</li> 
+      </ul>
+    </div>
+    
+        <div class="badge">
+            <a href="https://github.com/allrod5/vardef/">Fork me on GitHub</a>
+            <img src="_static/right-red@2x.png">
+        </div>
+    
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="vardef-contained-and-organized-variable-definition">
+<span id="vardef"></span><h1>vardef: contained and organized variable definition<a class="headerlink" href="#vardef-contained-and-organized-variable-definition" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://vardef.readthedocs.io/en/latest/usage/index.html">Usage Examples 🚩</a> | <a class="reference external" href="https://vardef.readthedocs.io/en/latest/reference/index.html">Developer Reference 👩‍💻</a> | <a class="reference external" href="https://vardef.readthedocs.io/en/latest/authors.html">Authors 👫</a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><th class="stub"><p>license</p></th>
+<td><p><a class="reference external" href="https://github.com/allrod5/vardef/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/allrod5/vardef" /></a></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>docs</p></th>
+<td><p><a class="reference external" href="https://vardef.readthedocs.io/en/latest/"><img alt="Documentation" src="https://readthedocs.org/projects/pip/badge/?version=latest&amp;style=plastic" /></a></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>tests</p></th>
+<td><p><a class="reference external" href="https://github.com/allrod5/vardef/actions"><img alt="Build Status" src="https://github.com/allrod5/vardef/workflows/build/badge.svg" /></a> <a class="reference external" href="https://github.com/allrod5/vardef/blob/master/setup.py#L48"><img alt="Dependencies: None" src="https://img.shields.io/badge/dependencies-none-brightgreen.svg" /></a> <a class="reference external" href="https://coveralls.io/r/allrod5/vardef"><img alt="Coverage Status" src="https://coveralls.io/repos/allrod5/vardef/badge.svg?branch=master&amp;service=github" /></a> <a class="reference external" href="https://sonarcloud.io/dashboard?id=allrod5_vardef"><img alt="Reliability Rating" src="https://sonarcloud.io/api/project_badges/measure?project=allrod5_vardef&amp;metric=reliability_rating" /></a> <a class="reference external" href="https://sonarcloud.io/dashboard?id=allrod5_vardef"><img alt="Security Rating" src="https://sonarcloud.io/api/project_badges/measure?project=allrod5_vardef&amp;metric=security_rating" /></a> <a class="reference external" href="https://github.com/psf/black"><img alt="Code Style" src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a> <a class="reference external" href="https://flake8.pycqa.org/en/latest/"><img alt="Standards" src="https://img.shields.io/badge/standards-flake8-blue" /></a></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>package</p></th>
+<td><p><a class="reference external" href="https://pypi.org/project/vardef"><img alt="PyPI Package latest release" src="https://img.shields.io/pypi/v/vardef.svg" /></a> <a class="reference external" href="https://pypi.org/project/vardef"><img alt="PyPI Wheel" src="https://img.shields.io/pypi/wheel/vardef.svg" /></a> <a class="reference external" href="https://pypi.org/project/vardef"><img alt="Supported versions" src="https://img.shields.io/pypi/pyversions/vardef.svg" /></a> <a class="reference external" href="https://pypi.org/project/vardef"><img alt="Supported implementations" src="https://img.shields.io/pypi/implementation/vardef.svg" /></a> <a class="reference external" href="https://github.com/allrod5/vardef/blob/master/.github/workflows/build.yml#L11"><img alt="Supported Platforms" src="https://img.shields.io/badge/platforms-windows%20%7C%20macos%20%7C%20linux-lightgrey" /></a> <a class="reference external" href="https://pepy.tech/project/vardef"><img alt="Downloads per Month" src="https://pepy.tech/badge/vardef/month" /></a></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>vardef</strong> is a simple idea for declaring variables in multiple statements in a contained
+and organized fashion.</p>
+<p><em>A simple Python decorator built with Heart and designed for Humans</em></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vardef</span> <span class="kn">import</span> <span class="n">vardef</span>
+
+
+<span class="n">vars_defined</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nd">@vardef</span>
+<span class="k">def</span> <span class="nf">somevar</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">global</span> <span class="n">vars_defined</span>
+    <span class="n">vars_defined</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="mi">42</span>
+
+<span class="nd">@vardef</span>
+<span class="k">def</span> <span class="nf">othervar</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">global</span> <span class="n">vars_defined</span>
+    <span class="n">vars_defined</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="mi">73</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">vars_defined</span><span class="p">)</span>
+<span class="c1"># 2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">somevar</span><span class="p">)</span>
+<span class="c1"># 42</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">othervar</span><span class="p">)</span>
+<span class="c1"># 73</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">somevar</span><span class="p">))</span>
+<span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">othervar</span><span class="p">))</span>
+<span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">unittest.mock</span> <span class="kn">import</span> <span class="n">Mock</span>
+<span class="kn">from</span> <span class="nn">vardef</span> <span class="kn">import</span> <span class="n">vardef</span>
+
+<span class="kn">from</span> <span class="nn">somewhere</span> <span class="kn">import</span> <span class="n">User</span>
+
+
+<span class="nd">@vardef</span>
+<span class="k">def</span> <span class="nf">user_with_read_role</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Mock</span><span class="p">,</span> <span class="n">User</span><span class="p">]:</span>
+    <span class="n">user_mock</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Mock</span><span class="p">,</span> <span class="n">User</span><span class="p">]</span> <span class="o">=</span> <span class="n">Mock</span><span class="p">(</span><span class="n">User</span><span class="p">)</span>
+    <span class="n">user_mock</span><span class="o">.</span><span class="n">roles</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;READ&quot;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">user_mock</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">user_with_read_role</span><span class="o">.</span><span class="n">roles</span><span class="p">)</span>
+<span class="c1"># [&#39;READ&#39;]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">user_with_read_role</span><span class="p">))</span>
+<span class="c1"># &lt;class &#39;unittest.mock.Mock&#39;&gt;</span>
+</pre></div>
+</div>
+</td>
+<td><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">from</span> <span class="nn">butterfree.extract</span> <span class="kn">import</span> <span class="n">Source</span>
+<span class="kn">from</span> <span class="nn">butterfree.extract.readers</span> <span class="kn">import</span> <span class="n">TableReader</span>
+<span class="kn">from</span> <span class="nn">butterfree.clients</span> <span class="kn">import</span> <span class="n">SparkClient</span>
+<span class="kn">from</span> <span class="nn">vardef</span> <span class="kn">import</span> <span class="n">vardef</span>
+
+
+<span class="n">spark_client</span> <span class="o">=</span> <span class="n">SparkClient</span><span class="p">()</span>
+
+<span class="nd">@vardef</span>
+<span class="k">def</span> <span class="nf">df</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+    <span class="n">source</span> <span class="o">=</span> <span class="n">Source</span><span class="p">(</span>
+        <span class="n">readers</span><span class="o">=</span><span class="p">[</span><span class="n">TableReader</span><span class="p">(</span>
+            <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;colors&quot;</span><span class="p">,</span>
+            <span class="n">database</span><span class="o">=</span><span class="s2">&quot;datalake_colors&quot;</span><span class="p">,</span>
+            <span class="n">table</span><span class="o">=</span><span class="s2">&quot;colors&quot;</span><span class="p">,</span>
+        <span class="p">)],</span>
+        <span class="n">query</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">            SELECT * FROM colors</span>
+<span class="s2">        &quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">source</span><span class="o">.</span><span class="n">construct</span><span class="p">(</span><span class="n">spark_client</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;colors&quot;</span><span class="p">)</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vardef</span> <span class="kn">import</span> <span class="n">vardef</span>
+
+
+<span class="nd">@vardef</span>
+<span class="k">def</span> <span class="nf">buggy</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">4</span> <span class="o">/</span> <span class="mi">0</span>
+
+<span class="c1"># Traceback (most recent call last):</span>
+<span class="c1">#   File &quot;.../buggy.py&quot;, line 5, in &lt;module&gt;</span>
+<span class="c1">#     def buggy() -&gt; int:</span>
+<span class="c1">#   File &quot;.../vardef/__init__.py&quot;, line 7, in vardef</span>
+<span class="c1">#     return define_var()</span>
+<span class="c1">#   File &quot;.../buggy.py&quot;, line 6, in buggy</span>
+<span class="c1">#     return 4 / 0</span>
+<span class="c1"># ZeroDivisionError: division by zero</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="why-to-use-vardef">
+<h2>Why to use vardef<a class="headerlink" href="#why-to-use-vardef" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Organization</strong>: using a <em>vardef</em> function allows all necessary code to define and
+initialize a variable to be logically separated from the outer scope. This makes it
+clear what code is relevant to the rest of the scope and what code is only there to
+assist with initialization. Also, in this way, auxiliary code is avoided being exposed
+to be imported or messed up by external agents.</p></li>
+<li><p><strong>Conciseness</strong>: a <em>vardef</em> function is a syntax sugar to avoid the need to declare
+a function which will only be called once to define a variable. With the decorator
+your code gets concise and also avoids exposing the initializer function.</p></li>
+</ul>
+<p>For further information on how to use the decorator check out our <a class="reference external" href="https://vardef.readthedocs.io/en/latest/">docs</a>!</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <a id="sidebar-anchor"></a>
+    
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script><h3><a href="index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">vardef: contained and organized variable definition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#why-to-use-vardef">Why to use vardef</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/index.html">Usage Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/readme.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="Installation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Contents"
+             accesskey="P">previous</a> |</li>
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Rodrigo Martins de Oliveira.
+      Last updated on Dec 04, 2020.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.3.1.
+    </div>
+  </body>
+</html>
